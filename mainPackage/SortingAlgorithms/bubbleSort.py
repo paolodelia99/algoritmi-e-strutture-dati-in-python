@@ -1,6 +1,11 @@
 import random
-"""
-Bubble Sort
+"""Bubble Sort
+
+Bubble sort is an in-place comparison algorithm.
+is a simple sorting algorithm that repeatedly steps through the list, 
+compares adjacent elements and swaps them if they are in the wrong order.
+
+Time complezity: O(n^2)
 """
 
 def swap(list,first_index,second_index):
