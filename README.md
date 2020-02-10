@@ -1,3 +1,3 @@
-# Data structure and Algorithm 
+# Algoritmi e Strutture dati in Python 
 
-Here's I put all the stuff about DSA. 
+Ecco finalmente la guida onnicomprensiva di algoritmi e strutture dati in <b>ptyhon!</b>

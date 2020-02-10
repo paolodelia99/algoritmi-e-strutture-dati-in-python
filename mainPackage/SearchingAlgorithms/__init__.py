@@ -1,0 +1,3 @@
+from deterministicSearch import deterministic_search
+from binarySearch import binary_search
+from randomSearch import random_search

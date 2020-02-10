@@ -1,5 +1,5 @@
-import pytest
-from ..mainPackage.SortingAlgorithms.insertionSort import insertion_sort
+import random
+from insertionSort import insertion_sort
 
 sample_list = [3,5,1,9,8,2]
 
