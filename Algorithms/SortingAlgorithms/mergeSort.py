@@ -1,10 +1,8 @@
-"""Merge Sort Algorithm
-Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves,
-calls itself for the two halves and then merges the two sorted halves.
-The merge() function is used for merging two halves.
+"""Merge Sort
+Merge sort è un algoritmo di ordinamento basato su confronti che utilizza un processo di
+risoluzione ricorsivo, sfruttando la tecnica del Divide et Impera.
 
-Time complexity: ϴ(n lg(n))
-
+Complessità temporale: ϴ(n lg(n))
 """
 
 

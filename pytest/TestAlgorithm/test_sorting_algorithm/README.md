@@ -2,7 +2,8 @@
 
 Lo schema generale che ho seguito per testare gli algoritmi di ordinamento è descritto dal seguente codice:
 
-```
+```python
+from package import algoritmo_di_sorting_da_testare
 
 list = [5,2,4,6,1,7,3]
 # creo una copia della lista che andrò ad ordinare con l'algoritmo di ordinamento che voglio testare

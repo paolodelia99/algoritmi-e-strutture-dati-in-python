@@ -1,5 +1,9 @@
 """Insertion Sort
 
+Insertion sort è un algoritmo di ordinamento in place, cioè ordina
+l'array senza doverne creare una copia, risparimando memoria.
+
+Complessità temporale: O(n^2)
 """
 
 def insertion_sort(list):
