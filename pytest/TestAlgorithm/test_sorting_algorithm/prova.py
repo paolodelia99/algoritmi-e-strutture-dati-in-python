@@ -1,10 +1,12 @@
-from heap import Heap
+from quickSort import quicksort, randomize_quicksort
 
-sample_list = [4, 1, 3, 2, 16, 9, 10, 14, 8, 7]
-heap_1 = Heap(sample_list)  # inizializzo l'heap
-print(heap_1.container)
-heap_1.heap_sort()
-print(heap_1.container)
+sample_list = [5, 2, 4, 7, 1, 3, 2, 6]
+# copio sample list in sorted_sample_list
+sorted_sample_list = sample_list.copy()
+# la ordino
+quicksort(sorted_sample_list, 0, len(sorted_sample_list)-1)
+# randomize_quicksort(sorted_sample_list, 0, len(sorted_sample_list)-1)
+# ordino sample_list con il metodo sort()
 sample_list.sort()
-
-print(all([a == b for a, b in zip(sample_list, heap_1.container)]))
+print(f'sorted sample: {sorted_sample_list}')
+print(f'final sample list {sample_list}')
