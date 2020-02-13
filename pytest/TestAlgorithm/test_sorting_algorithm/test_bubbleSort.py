@@ -35,7 +35,7 @@ for i in range(random.randint(10, 22)):
 sorted_list1 = list1.copy()
 sorted_list2 = list2.copy()
 sorted_list3 = list3.copy()
-# le ordino con insetion_sort
+# le ordino con bubble_sort
 bubble_sort(sorted_list1)
 bubble_sort(sorted_list2)
 bubble_sort(sorted_list3)

@@ -1,30 +1,43 @@
 class Stack:
-    # "Costruttuore dello stack"
-    def __init__(self):
-        self.container = []
+    """
+    Implementazione dello stack basato su un vettore
+
+    Attributi:
+        items (list): contenitore dello stack
+        m (int): dimensione massima dello stack
+        top (int): indice (o puntatore) dell'elemento inserito più recentemente
+    """
+    def __init__(self, dim):
+        self.items = [] * dim
+        self.m = dim # dimensione massima array
+        self.top = 0
 
     # Ritorna True se lo stack è vuoto
     def is_empty(self):
-        return self.size() == 0
+        return self.top == 0
 
     # inserisce un elemento nello stack
     def push(self, item):
-        self.container.append(item)
+        if self.top == self.m:
+            raise Exception('Lo stack è pieno!')
+        self.items.append(item)
 
     # rimuove l'ultimo elemento dello stack
     def pop(self):
-        return self.container.pop()
+        if self.top == 0:
+            raise Exception('Lo stack è vuoto!')
+        return self.items.pop()
 
     # restituisce l'ultimo elemento dello stack
     def peek(self):
-        if self.isEmpty():
-            raise Exception("Stack empty!")
-        return self.container[-1]
+        if self.top == 0:
+            raise Exception("Lo stack è vuoto!")
+        return self.items[self.top]
 
     # ritorna la dimensione dello stack
     def size(self):
-        return len(self.container)
+        return len(self.items)
 
     # ritorna tutto lo stack
     def show(self):
-        return self.container
+        return self.items

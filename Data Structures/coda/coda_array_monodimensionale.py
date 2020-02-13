@@ -4,7 +4,7 @@ deque dalla classe collections
 """
 from collections import deque
 
-
+# fixme: da rifare
 class Coda:
     def __init__(self, list_):
         self.items = deque(list_)

@@ -9,5 +9,31 @@ si viene serviti nello stesso ordine in cui si è presentati.
 
 ![Queue](../../resources/imgs/Queue.png)
 
-Chiamiamo <b>Enqueue</b> l'operazione di inserimento su una coda. Chiamiaremo 
-<b>Dequeue</b> l'operazione di delete 
+## Specifica
+
+Le operazioni basilari e gli attributi che una coda possiede sono:
+
+```text
+
+boolean is_empty()
+# restituisce true se la coda è vuota
+
+enqueue(Item v)
+# inserisce v infondo alla coda
+
+Item dequeue()
+# estrae l'elemento in testa alla coda e lo restituisce al chiamante
+
+head 
+# attributo che indica (o punta) all'inizio della coda
+
+tail
+# attributo che indica la prossima posizone in cui l'ultimo elemento che arriva alla coda 
+# prende posto alla fine della coda
+```
+
+## Possibili implementazioni
+
+### Liste monodirezionali
+
+### Array Circolari

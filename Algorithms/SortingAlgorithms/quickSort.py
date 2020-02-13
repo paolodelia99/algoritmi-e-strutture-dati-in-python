@@ -5,6 +5,8 @@ Implementazione degli algoritmi di quicksort e random_quicksort, delle corrispet
 quicksort
 complessità temporale: caso peggiore O(n^2)
                        caso medio Θ(n ln(n))
+
+random_quicksort: tempo di esecuzione atteso O(n ln(n))
 """
 from random import randint
 
@@ -43,6 +45,7 @@ def partition(A, p, r):
     A[i + 1], A[r] = A[r], A[i + 1]
     return i + 1
 
+
 def randomize_quicksort(A, p, r):
     """implementazione della versione randomizzata di quicksort
 
@@ -53,8 +56,9 @@ def randomize_quicksort(A, p, r):
     """
     if p < r:
         q = randomize_partition(A, p, r)
-        randomize_quicksort(A, p, q-1)
-        randomize_quicksort(A, q+1, r)
+        randomize_quicksort(A, p, q - 1)
+        randomize_quicksort(A, q + 1, r)
+
 
 def randomize_partition(A, p, r):
     """procedura partition
