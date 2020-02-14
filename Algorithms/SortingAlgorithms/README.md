@@ -1,5 +1,21 @@
 # Sorting Algorithms
 
+### Insertion sort
+
+---
+
+### Bubble sort
+
+---
+
+### Selection Sort
+
+---
+
+### Merge Sort 
+
+---
+
 ### QuickSort
 
 Quicksort è un algoritmo di ordinamento ricorsivo in place.
