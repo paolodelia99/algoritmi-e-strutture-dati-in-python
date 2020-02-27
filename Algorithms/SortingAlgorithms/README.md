@@ -1,25 +1,162 @@
 # Sorting Algorithms
 
-### Insertion sort
-
----
-
 ### Bubble sort
 
+Bubble sort è un semplice algoritmo di ordinamento di una lista di dati.
+Ogni coppia di elementi adiacenti viene comparata e invertita di posizione se sono nell'ordine sbagliato.
+L'algoritmo continua nuovamente a ri-eseguire questi passaggi per tutta la lista finché
+non vengono più eseguiti scambi, situazione che indica che la lista è ordinata
+
+#### Pseudocodice
+```text
+BUBBLESORT(A)
+    for i = 0 to A.length -1 
+        for j = A.length downto i+1
+            if A[j]<A[j-1]
+                scambia A[j] con A[j-1]
+```
+
+- **Compessità Temporale**:
+   - Caso Peggiore O(n<sup>2</sup>)
+   - Caso Medio O(n<sup>2</sup>)
+   - Caso Ottimo O(n)
+                      
 ---
 
 ### Selection Sort
 
+Selection sort è un algoritmo di ordiameneto che opera **in place**
+ ed in modo simile all'**insertion sort**. L'algoritmo è di tipo **non adattivo**, 
+ ossia il suo tempo di esecuzione non dipende dall'input ma dalla dimensione dell'array.
+
+#### Come Funziona
+
+L'algotimo seleziona di volta in volta il numero minore nella sequenza di partenza e lo sposta
+nella sequenza ordinata. Quello che selection sort fa è quindi di dividere la sequenza in due parti:
+la sottosequenza ordinata, che occupa le prime posizioni dell'array, e la sottosequenza da ordinare,
+che occupa la parte restante dell'array.
+
+#### Pseudocodice
+```text
+SELECTION-SORT(A)
+    n = A.length
+    for i = 0 to n
+        posmin = i
+        for j = i+1 to n
+            if A[j] < A[posmin]
+                posmin = j
+        if posmin != i
+            scambia A[i] con A[posmin]  
+```
+
+- **Compessità Temporale**:
+   - Caso Peggiore O(n<sup>2</sup>)
+   - Caso Medio O(n<sup>2</sup>)
+   - Caso Ottimo O(n<sup>2</sup>)
+
+---
+
+### Insertion sort
+
+Insertion sort è un algoritmo di ordinamento che opera **in place**, è un algoritmo
+relativamente semplice per oridinare un array.
+
+#### Come funziona
+
+Come selection sort insertion sort divide l'array inziale in due sottoarray: il 
+primo sottoarray è quello già ordinato, mentre il secondo sottoarray è quello da ordinare.
+All'inizio la prima sottosequenza è già ordinata, in quanto è composta da un solo elemento,
+all'*k*-esima iterazione, la sequenza ordinata contiene *k* elementi. In ogni iterazione, 
+viene rimosso un elemento della sottosequenza da ordinare e *inserito* nella sequenza ordinata.
+
+
+#### Pseudocodice
+
+```text
+INSERTION-SORT(A)
+    for j = 2 to A.length
+        key = A[j]
+        i = j - 1
+        while i > 0 and A[i] > key
+            A[i+1] = A[i]
+            i = i - 1
+        A[i+1] = key
+```
+
+- **Compessità Temporale**:
+   - Caso Peggiore O(n<sup>2</sup>)
+   - Caso Medio O(n<sup>2</sup>)
+   - Caso Ottimo O(n)
+   
 ---
 
 ### Merge Sort 
+
+**Merge Sort** è un algoritmo di ordinamento basato su confronti che utlizza un processo di
+risoluzione **ricorsivo**, sfruttando la tecnica **Divide et Impera**.
+
+
+#### Come funziona
+
+Concettualmente, l'algoritmo funziona nel seguente modo:
+
+* Se la sequenza da ordinare ha lunghezza 0 oppure 1, è già ordinata. Altrimenti:
+* La sequenza viene divisa (*divide*) in due metà( se la sequenza contiene un 
+numero dispari di elementi, viene divisa in due sottosequenza dove la prima avrà un
+elemento in più rispetto alla seconda)
+* Ognuna di queste sottosequenza viene ordinata, applicando **ricorsivamente** l'algoritmo(*impera*)
+* Le due sottosequenze ordinate vengono unite (*combina*). Per fare questo, si estrae ripetutamente il
+minimo delle sottosequenza e lo si pone nella sequenza in uscita, che risulterà ordinata.
+
+####Pseudocodice
+
+```text
+MERGE-SORT(A,p,r)
+    if p < r
+        q = floor((p+r)/2)
+        MERGE-SORT(A,p,q)
+        MERGE-SORT(A,q+1,r)
+        MERGE(A,p,q,r)
+```
+
+```text
+MERGE(A,p,q,r)
+    num_1 = q - p + 1
+    num_2 = r - q
+    L = new Array(num_1+1)
+    R = new Array(num_2+1)
+    for i = 1 to num_1
+        L[i] = A[p+i-1]
+    for j = 1 to num_2
+        R[j] = A[q+j]
+    L[num_1+1] infinity
+    R[num_2+1] = infinity
+    i = 1 
+    j = 1
+    for k = p to r
+        if L[i] <= R[j]
+            A[k] = L[i]
+            i = i + 1
+        else if A[k] = R[j]
+            j = j + 1
+```
+
+- **Compessità Temporale**:
+   - Caso Peggiore O(n log<sub>2</sub>n)
+   - Caso Medio O(n log<sub>2</sub>n)
+   - Caso Ottimo O(n log<sub>2</sub>n)
+   
 
 ---
 
 ### QuickSort
 
-Quicksort è un algoritmo di ordinamento ricorsivo in place.
-E' basato sul paradigma divide et impera dal momento che: 
+Quicksort è un algoritmo di ordinamento **ricorsivo in place non stabile**. Appartiene alla classe degli algoritmi **divide et impera**,
+dal momento che scompone ricorsivamente i dati da processare in sottoprocessi.
+
+#### Come funziona
+
+I passi che quicksort compie sono i seguenti: 
 - <b>(Divide)</b> scompone ricorsivamente i dati da processare in sottoprocessi.La scomposizione viene effetuata dalla procedura 
 <b>partiton(A, p, r)</b> che partiziona la lista A[p..r] in due sottoarray A[p..q-1] e A[q+1..r] tali che ogni elemento di A[p..q-1] sia minore o uguale ad A[q] che, a sua volta,
 è minore o uguale a ogni elemento di A[q+1..r]. Questa procedura ritorna l'indice q.
@@ -27,7 +164,8 @@ E' basato sul paradigma divide et impera dal momento che:
 - <b>(Combina)</b> poichè i sottoarray sono già ordinati, non occorre alcun lavoro per combinarli: 
 l'intero array A[p..r] è ordinato.
 
-PSEUDO CODICE
+#### Pseudocodice
+
 ```text
 QUICKSORT(A, p, r)
 if p < r
@@ -47,8 +185,6 @@ for j = p to r - 1
         scambia A[i] con A[j]
 scambia A[i+1] con A[r]
 ```
-
-E' intuibile che il costo per trovare il pivot è di Θ(n)
 
 #### Complessità computazionale
 
@@ -110,6 +246,4 @@ scambia A[r] con A[i]
 return PARTITION(A, p, r)
 ```
 
-#####  Tempo di esecuzione atteso
-
-..da finire
+### Counting Sort

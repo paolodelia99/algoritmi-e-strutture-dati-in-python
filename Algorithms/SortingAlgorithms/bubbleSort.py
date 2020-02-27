@@ -1,14 +1,3 @@
-"""Bubble Sort
-
-Bubble sort è un semplice algoritmo di ordinamento di una lista di dati.
-Ogni coppia di elementi adiacenti viene comparata e invertita di posizione se sono nell'ordine sbagliato.
-L'algoritmo continua nuovamente a ri-eseguire questi passaggi per tutta la lista finché
-non vengono più eseguiti scambi, situazione che indica che la lista è ordinata
-
-Tempo di esecuzione: O(n^2)
-"""
-
-
 def bubble_sort(list):
     """Bubble sort
     
