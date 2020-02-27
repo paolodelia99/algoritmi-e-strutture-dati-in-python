@@ -1,12 +1,5 @@
 # Sorting Algorithms
 
-### Bubble sort
-
-Bubble sort è un semplice algoritmo di ordinamento di una lista di dati.
-Ogni coppia di elementi adiacenti viene comparata e invertita di posizione se sono nell'ordine sbagliato.
-L'algoritmo continua nuovamente a ri-eseguire questi passaggi per tutta la lista finché
-non vengono più eseguiti scambi, situazione che indica che la lista è ordinata
-=======
 Un classico problema algoritmico consiste di ordinare una sequenza di n elementi. 
 Per poter ordinare tale le sequenza è necessario che gli elementi appartengano tutti ad un insieme dove è definita una relazione d'ordine; ossia, presi due elementi a scelta, deve sempre essere possibile accertare quale venga prima e quale dopo. Dunque per poter ordinare è necessario che esista:
 
@@ -23,57 +16,10 @@ Un algoritmo di ordinamento si dice stabile se in presenza di due elementi con l
 
 Un algoritmo di ordinamento su array si dice sul posto se in ogni dato istante al più è allocato un numero costante di variabili, oltre all'array da ordinare: un algoritmo, quindi, è sul posto se non utilizza array di supporto.
 
----
+## Algoritmi
 
-### Insertion sort
+### Bubble sort
 
-L'insertion sort, è un algoritmo relativamente semplice per ordinare un array. Non è molto diverso dal modo 
-in cui un essere umano, spesso, ordina un mazzo di carte. Esso è un algoritmo <b><em>in place</em></b>, cioè ordina 
-l'array senza doverne creare una copia, risparmiando memoria. 
-
-#### Descrizione
-
-L'algoritmo utilizza due indici: il primo punta inizialmente al secondo elemento dell'array,
- il secondo inizia dal primo. Se il primo elemento è maggiore del secondo, i due valori vengono 
- scambiati. Poi il primo indice avanza di una posizione e il secondo indice riparte dall'elemento 
- precedente quello puntato dal primo. Se l'elemento puntato dal secondo indice non è maggiore di quello a cui punta il primo indice, il secondo indice indietreggia; e così fa, finché si trova nel punto in cui il valore del primo indice deve essere inserito (da qui insertion). L'algoritmo così tende a spostare man mano gli elementi maggiori verso destra.
-
-#### Pseudo-codice
- 
-```text
-INSERTION-SORT(A)
-    for j =2 in A.length
-        key = A[j]
-        // inserisce A[j] nella sequenza ordinata A[1..j-1]
-        i = j - 1
-        while i > 0 and A[i] > key
-            A[i+1] = A [i]
-            i = i -1 
-        A[i + 1] = key
-```
-
-Caso peggiore temporalmente: O(n<sup>2</sup>)
-Caso medio temporalmente: O(n<sup>2</sup>)
-Caso ottimo temporalmente: O(n)
-
----
-
-#### Pseudocodice
-```text
-BUBBLESORT(A)
-    for i = 0 to A.length -1 
-        for j = A.length downto i+1
-            if A[j]<A[j-1]
-                scambia A[j] con A[j-1]
-```
-
-<<<<<<< HEAD
-- **Compessità Temporale**:
-   - Caso Peggiore O(n<sup>2</sup>)
-   - Caso Medio O(n<sup>2</sup>)
-   - Caso Ottimo O(n)
-                      
-=======
 Il bubble sort o bubblesort è un semplice algoritmo di ordinamento per ordinare array.
 L'algoritmo deve il suo nome al modo in cui gli elementi vengono ordinati in una lista: quelli più piccoli "risalgono" 
 verso un'estremità della lista, mentre quelli più grandi "affondano" verso l'estremità opposta della lista, come le bolle in un bicchiere di spumante.
@@ -97,15 +43,15 @@ BUBBLE-SORT(A)
 
 ```
 
-Caso peggiore temporalmente: O(n<sup>2</sup>)
-Caso medio temporalmente: O(n<sup>2</sup>)
-Caso ottimo temporalmente: O(n)
+- **Compessità Temporale**:
+   - Caso Peggiore O(n<sup>2</sup>)
+   - Caso Medio O(n<sup>2</sup>)
+   - Caso Ottimo O(n)
 
 ---
 
 ### Selection Sort
 
-<<<<<<< HEAD
 Selection sort è un algoritmo di ordiameneto che opera **in place**
  ed in modo simile all'**insertion sort**. L'algoritmo è di tipo **non adattivo**, 
  ossia il suo tempo di esecuzione non dipende dall'input ma dalla dimensione dell'array.
@@ -169,44 +115,6 @@ INSERTION-SORT(A)
    - Caso Medio O(n<sup>2</sup>)
    - Caso Ottimo O(n)
    
-=======
-Selection sort è un algoritmo di ordinamento che opera in place. L'algoritmo
-è di tipo non adattivo, ossia il suo tempo di esecuzione non dipende 
-dall'input ma dalla dimensione dell'array.
-
-#### Descrizione 
-
-L'algoritmo seleziona di volta in volta il numero minore nella sequenza di partenza e 
-lo sposta nella sequenza ordinata; di fatto la sequenza viene suddivisa in due parti: 
-la sottosequenza ordinata, che occupa le prime posizioni dell'array, e la sottosequenza 
-da ordinare, che costituisce la parte restante dell'array.
-
-Dovendo ordinare un array A di lunghezza n, si fa scorrere l'indice i da 1 a n-1 ripetendo i seguenti passi:
-
-1. si cerca il più piccolo elemento della sottosequenza A[i..n];
-2. si scambia questo elemento con l'elemento i-esimo.
-
-#### Pseudo-codice
-
-```text
-
-SELECTION-SORT(A)
-    for i = 0 to A.length -1
-        currentMin = i
-        for j = i+1 to A.length
-            if A[j] < A[currentMin]
-                currentMin = j
-            if currentMin != j
-                scambia A[j] con A[currentMin]
-
-```
-
-Caso peggiore temporalmente: O(n<sup>2</sup>)
-Caso medio temporalmente: O(n<sup>2</sup>)
-Caso ottimo temporalmente: O(n<sup>2</sup>)
-
----
-
 ### Merge Sort 
 
 **Merge Sort** è un algoritmo di ordinamento basato su confronti che utlizza un processo di
