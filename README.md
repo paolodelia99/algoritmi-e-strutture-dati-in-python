@@ -1,14 +1,28 @@
 # Algoritmi e Strutture dati in Python 
 
-Ecco finalmente la guida onnicomprensiva di algoritmi e strutture dati in <b>ptyhon!</b>
+Ecco finalmente la guida di algoritmi e strutture dati in <b>ptyhon!</b>
 
 ## Folder Structure
 
-Tutte le implementazioni degli algoritmi sono nella directory <b>Algorithms</b>, mentre le implementazioni della strutture dai sono nel folder <b>Data Strucutres</b>.
+Tutte le implementazioni degli algoritmi sono nella cartella <b>Algorithms</b>, mentre le implementazioni della strutture dai sono nel cartella <b>Data Strucutres</b>.
 All'interno di ognuna di queste cartelle sia gli algoritmi che le strutture dati sono raggruppate ognuno in una cartelle che li rappresenta.
 
-```
+<br/>
 
+Per testare la correttezza degli algoritmi e strutture dati codificati, ho creato la cartella pytest
+dove ho effetuato gli unit test ( ovviamente il framework utilizzato è pytest)
+
+
+Mentre nella cartella resouces contienete tutte le immagini che ho utilizzato nei README
+
+```
+.
+├── README.md
+├── .gitignore
+├── Algorithms
+├── pytest
+├── resources
+└── Data Structures
 ```
 
 ## Nozioni Basilari
@@ -45,7 +59,7 @@ limitazioni. Questo si chiama anche studiare l'efficenza <b>asintotica</b> degli
 
 Le notazioni che si usano per descrivere il tempo di esecuzione asintotico sono definite in 
 termini di funzioni il cui dominio è l'insieme dei numeri naturali. Tali notazioni sono comode per descrivere la funzione
-<em>al limite</em>, tempo di esecuzione dell'algoritmo, che di solito è definita soltanto con dimensioni
+<em>T(n)</em>, tempo di esecuzione dell'algoritmo, che di solito è definita soltanto con dimensioni
 intere dell'input.
 
 ### Notazione Θ
@@ -95,3 +109,7 @@ Graficamente succede questo:
 ![Omega](./resources/imgs/omega_grande.png)
 
 <em>g(n)</em> è un <b>limite asintoticamente inferiore (stretto)</b> per <em>f(n)</em>
+
+### Contribuizione
+
+Per chi fosse interessato sia alla stesura degli algoritmi in python sia all stesura dei README può contribuire.
