@@ -1,8 +1,3 @@
-"""
-Implementazione di una coda con array circolare
-"""
-
-
 class Coda:
     """ coda con array circolare
 

@@ -1,8 +1,8 @@
 # Stack (o pila in italiano)
 
-Lo stack (o pila) è un tipo di dato astratto che viene usato in diversi contesti 
+Lo **stack** (o pila) è un tipo di dato astratto che viene usato in diversi contesti 
 per riferirsi a strutture dati, le cui modalità d'accesso ai dati in essa contenuti
-seguono una modalità LIFO (Last In First Out), ovvero tale per cui i dati
+seguono una modalità **LIFO** (Last In First Out), ovvero tale per cui i dati
 vengono estratti (letti) in ordine rigorosamente inverso rispetto a quello in cui 
 sono stati inseriti (scritti).
 
@@ -15,7 +15,7 @@ Le operazioni basilari e gli attributi che una stack possiede sono:
 ```text
 
 boolean is_empty()
-# restituisce true se la pila è vuot
+# restituisce true se la pila è vuota
 
 push(Item v)
 # inserisce v in cima alla pila

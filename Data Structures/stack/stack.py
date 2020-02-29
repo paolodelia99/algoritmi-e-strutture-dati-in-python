@@ -1,6 +1,5 @@
 class Stack:
-    """
-    Implementazione dello stack basato su un vettore
+    """Implementazione dello stack basato su un vettore
 
     Attributi:
         items (list): contenitore dello stack
@@ -10,7 +9,7 @@ class Stack:
     def __init__(self, dim):
         self.items = [] * dim
         self.m = dim # dimensione massima array
-        self.top = 0
+        self.top = 0 # ountatore al ultimo elemento inserito nell stack
 
     # Ritorna True se lo stack è vuoto
     def is_empty(self):
