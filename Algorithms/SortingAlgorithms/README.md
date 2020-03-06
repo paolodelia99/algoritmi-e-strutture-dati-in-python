@@ -169,7 +169,7 @@ MERGE(A,p,q,r)
 - **Compessità Temporale**:
    - Caso Peggiore O(n log<sub>2</sub>n)
    - Caso Medio O(n log<sub>2</sub>n)
-   - Caso Ottimo O(n log<sub>2</sub>n)
+   - Caso Migliore O(n log<sub>2</sub>n)
    
 
 ---

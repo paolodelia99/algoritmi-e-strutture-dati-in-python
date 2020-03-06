@@ -1,19 +1,12 @@
-"""Binary Search 
-
-implementazione delle versione ricorsiva e iterativa della binary search
-
-"""
-
-
 def binary_search(list_, element):
     """ ricerca binaria versione ricorsiva
 
            Parametri:
-           list_ (list): lista di numeri interi
-           element (int): elemento da trovare
+            list_ (list): lista di numeri interi
+            element (int): elemento da trovare
 
            Valore di Ritorno:
-           int: indice dell'elemento all'interno dell'array, altrimenti se non è presente ritorna -1
+            int: indice dell'elemento all'interno dell'array, altrimenti se non è presente ritorna -1
        """
     mid = len(list_) // 2
     if len(list_) == 1 and element != list_[mid]:
@@ -30,13 +23,13 @@ def binary_search_iterative(list_, p, r, element):
     """ ricerca binaria versione iterativa
 
         Parametri:
-        list_ (list): lista di numeri interi
-        p (int): indice di inzio dell'array
-        r(int): indice di fine dell'array
-        element (int): elemento da trovare
+            list_ (list): lista di numeri interi
+            p (int): indice di inzio dell'array
+            r(int): indice di fine dell'array
+            element (int): elemento da trovare
 
         Valore di Ritorno:
-        int: indice dell'elemento all'interno dell'array, altrimenti se non è presente ritorna -1
+            int: indice dell'elemento all'interno dell'array, altrimenti se non è presente ritorna -1
     """
     # Controllo che l'elemento non sia fuori dal range della lista
     if element < list_[p] or element > list_[r]:

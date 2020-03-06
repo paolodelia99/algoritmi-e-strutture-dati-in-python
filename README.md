@@ -29,11 +29,12 @@ Mentre nella cartella resouces contienete tutte le immagini che ho utilizzato ne
 
 `B` - Beginner, `A` - Advanced
 
-* `B` [Linked List](src/data-structures/linked-list)
-* `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
-* `B` [Queue](src/data-structures/queue)
-* `B` [Stack](src/data-structures/stack)
-* `B` [Heap](src/data-structures/heap) - max and min heap versions
+* `B` [Linked List](Data_Structures/linkedList/linkedList.py)
+* `B` [Doubly Linked List](Data_Structures/linkedList/doubleLinkedList.py)
+* `B` [Queue](Data_Structures/coda/coda_array_monodimensionale.py) - versione con array monodimesionale
+* `B` [Queue](Data_Structures/coda/coda_array_circolare.py) - versione con array circolare
+* `B` [Stack](Data_Structures/stack/stack.py)
+* `B` [Heap](Data_Structures/heap/heap.py) - max and min heap versions
 
 ## Algoritmi
 
@@ -56,12 +57,18 @@ Mentre nella cartella resouces contienete tutte le immagini che ho utilizzato ne
   
 
 * **Searching**
-    * `B` [Binary Search](Algorithms/SearchingAlgorithms/binarySearch.py)
-    * `B` [Deterministic Search](Algorithms/SearchingAlgorithms/deterministicSearch.py)
+    * `B` [Binary Search/ ricerca dicotomica](Algorithms/SearchingAlgorithms/binarySearch.py)
+    * `B` [Linear Search/ ricerca sequenziale](Algorithms/SearchingAlgorithms/deterministicSearch.py)
     * `B` [Random Search](Algorithms/SearchingAlgorithms/randomSearch.py)
     * `B` [Scramble Search](Algorithms/SearchingAlgorithms/scambleSearch.py)
     
+### Algoritmi per paradigma
 
+* **Forza Bruta**
+* **Algoritmi Golosi**
+* **Dividi et Impera**
+* **Programmazione Dinamica**
+* **Backtraking**
     
 ## Nozioni Basilari
 
@@ -150,4 +157,4 @@ Graficamente succede questo:
 
 ### Contribuizione
 
-Si prega di leggere CONTRIBUTING.md per i dettagli sul nostro codice di condotta e il processo di invio delle richieste pull.
+Si prega di leggere CONTRIBUTING.md per i dettagli sul codice di condotta e il processo di invio delle richieste pull.
