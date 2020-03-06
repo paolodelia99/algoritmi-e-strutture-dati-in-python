@@ -25,6 +25,44 @@ Mentre nella cartella resouces contienete tutte le immagini che ho utilizzato ne
 └── Data Structures
 ```
 
+## Strutture Dati
+
+`B` - Beginner, `A` - Advanced
+
+* `B` [Linked List](src/data-structures/linked-list)
+* `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
+* `B` [Queue](src/data-structures/queue)
+* `B` [Stack](src/data-structures/stack)
+* `B` [Heap](src/data-structures/heap) - max and min heap versions
+
+## Algoritmi
+
+`B` - Beginner, `A` - Advanced
+
+### Algoritmi per argomento
+
+* **Sorting**
+  * `B` [Bubble Sort](Algorithms/SortingAlgorithms/bubbleSort.py)
+  * `B` [Selection Sort](Algorithms/SortingAlgorithms/selectionSort.py)
+  * `B` [Insertion Sort](Algorithms/SortingAlgorithms/insertionSort.py)
+  * `B` [Heap Sort](Data_Structures)
+  * `B` [Merge Sort](Algorithms/SortingAlgorithms/mergeSort.py)
+  * `B` [Quicksort](Algorithms/SortingAlgorithms/quickSort.py) - versione normale e anche la versione randomizzata
+  * `B` [Counting Sort](Algorithms/SortingAlgorithms/countingSort.py)
+
+* **Sets**
+  * `B` [Maximum Subarray](Algorithms/DividiEtImpera/max-subarray-recursive.py) - versione ricorsiva
+  * `A` [Maxium Subarray](Algorithms/DynamicProgramming/max-subarray-iterative.py) - versione iterativa
+  
+
+* **Searching**
+    * `B` [Binary Search](Algorithms/SearchingAlgorithms/binarySearch.py)
+    * `B` [Deterministic Search](Algorithms/SearchingAlgorithms/deterministicSearch.py)
+    * `B` [Random Search](Algorithms/SearchingAlgorithms/randomSearch.py)
+    * `B` [Scramble Search](Algorithms/SearchingAlgorithms/scambleSearch.py)
+    
+
+    
 ## Nozioni Basilari
 
 Dato che per risolvere un determinato problemo molto spesso esistono molteplici algoritmi risolutori, 
@@ -112,4 +150,4 @@ Graficamente succede questo:
 
 ### Contribuizione
 
-Per chi fosse interessato sia alla stesura degli algoritmi in python sia all stesura dei README può contribuire.
+Si prega di leggere CONTRIBUTING.md per i dettagli sul nostro codice di condotta e il processo di invio delle richieste pull.
