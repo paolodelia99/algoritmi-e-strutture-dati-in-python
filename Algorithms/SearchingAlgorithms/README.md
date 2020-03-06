@@ -25,7 +25,7 @@ Se si arriva al punto che tutti gli elementi vengono scartati, la ricerca termin
 
 #### versione iterativa
 
-####Pseudocodice
+#### Pseudocodice
 
 ```text
 BINARY-SEARCH(A,p,r,el)
@@ -47,7 +47,7 @@ BINARY-SEARCH(A,p,r,el)
 
 #### versione ricorsiva
 
-####Pseudocodice
+#### Pseudocodice
 
 ```text
 BINARY-SEARCH(A,p,r,el)
@@ -176,6 +176,35 @@ e aggiorna  la variabile pos con la formula sopra indicata. Se elemento è trova
 termina l'esecuzione. Se l'elemento è minore di A[pos], aggiorna pos nel sottoarray di sinistra
 altrmineti calcola pos per il sottoarray di destra. Ripete questo ciclo fino a che 
 non trova l'elemento o is sottoarray si riduce a dimensione pari a 0.
+
+#### Pseudocodice
+
+```text 
+INTERPOLATION-SEARCH(A,el)
+    n = A.length
+    low = 0
+    high = n - 1
+               
+    while low <= high and el >= A[low] and el <= A[high]
+        if low == high
+            if A[low] == el
+                return low
+            return -1
+        
+
+        pos = low + int(((float(high-low)/(A[high]-A[low]))*(el-A[low])))
+        
+        if A[pos] == x 
+            return pos
+
+        if A[pos] < x
+            low = pos + 1
+        else
+            high = pos - 1
+
+    
+    return -1   
+```
 
 
 - **Complessità computazionale**
