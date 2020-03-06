@@ -1,4 +1,4 @@
-def interpolationSearch(A, el):
+def interpolation_search(A, el):
     """
         Implementazione interpoliation Search
 

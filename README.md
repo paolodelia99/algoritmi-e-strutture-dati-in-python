@@ -59,6 +59,8 @@ Mentre nella cartella resouces contienete tutte le immagini che ho utilizzato ne
 * **Searching**
     * `B` [Binary Search/ ricerca dicotomica](Algorithms/SearchingAlgorithms/binarySearch.py)
     * `B` [Linear Search/ ricerca sequenziale](Algorithms/SearchingAlgorithms/deterministicSearch.py)
+    * `B` [Jump Search](Algorithms/SearchingAlgorithms/jumpSearch.py)
+    * `B` [Interpolation Search](Algorithms/SearchingAlgorithms/interpolationSearch.py)
     * `B` [Random Search](Algorithms/SearchingAlgorithms/randomSearch.py)
     * `B` [Scramble Search](Algorithms/SearchingAlgorithms/scambleSearch.py)
     

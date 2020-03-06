@@ -178,7 +178,10 @@ altrmineti calcola pos per il sottoarray di destra. Ripete questo ciclo fino a c
 non trova l'elemento o is sottoarray si riduce a dimensione pari a 0.
 
 
-
+- **Complessità computazionale**
+    - Caso Peggiore: O(n)
+    - Caso Medio: log(log(n)) 
+    - Caso Migliore: O(1)
 
 ### Ricerca utilizzando la casualità
 
