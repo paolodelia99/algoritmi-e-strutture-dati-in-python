@@ -1,10 +1,3 @@
-"""Random Search Algorithm
-The Random search algorithm is a search algorithm that find an element in a list
-by choosing a random index every time until the all the indexes are choosen or when the
-element is found
-
-expected execution time: O(ln n) 
-"""
 import random
 from random import randint
 
@@ -13,11 +6,11 @@ def random_search(list, element):
     """ random search
 
         Parametri:
-        list_ (list): lista di numeri interi
-        element (int): elemento da trovare
+            list_ (list): lista di numeri interi
+            element (int): elemento da trovare
 
         Valore di Ritorno:
-        int: indice dell'elemento all'interno dell'array, altrimenti se non è presente ritorna -1
+            int: indice dell'elemento all'interno dell'array, altrimenti se non è presente ritorna -1
     """
     counter_list = [0] * len(list)
     while not check_list_elements(counter_list):
@@ -34,11 +27,11 @@ def las_vegas_algorithm(list_, element):
     """Las vegas algorithm
 
         Parametri:
-        list_ (list): lista di numeri interi
-        element (int): elemento da trovare
+            list_ (list): lista di numeri interi
+            element (int): elemento da trovare
 
         Valore di Ritorno:
-        int: indice dell'elemento all'interno dell'array, altrimenti se non è presente ritorna -1
+            int: indice dell'elemento all'interno dell'array, altrimenti se non è presente ritorna -1
     """
     randomIndex = randint(0, len(list_))
     while list_[randomIndex] != element:
@@ -51,13 +44,12 @@ def search_MA(list_, element, n_iteration):
     """Algoritmo di montecarlo
 
      Parametri:
-     list_ (list): lista di numeri interi
-     element (int): elemento da trovare
-     n_iteration (list): numero massimo di iterazioni
+         list_ (list): lista di numeri interi
+         element (int): elemento da trovare
+         n_iteration (list): numero massimo di iterazioni
 
      Valore di Ritorno:
-     int: indice dell'elemento all'interno dell'array,
-      altrimenti se non è presente ritorna -1
+         int: indice dell'elemento all'interno dell'array, altrimenti se non è presente ritorna -1
     """
     for i in range(0, n_iteration):
         random_index = randint(0, len(list_))

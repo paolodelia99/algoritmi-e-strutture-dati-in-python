@@ -7,7 +7,7 @@ def linear_search(A, element):
             element int: elemento da cercare
 
         valore di ritorno:
-            i int: indice dell'elemente all'interno della lista altrmenti -1 se l'elemento non è presente
+            int: indice dell'elemente all'interno della lista altrmenti -1 se l'elemento non è presente
     """
     for i in range(0, len(A)):
         if A[i] == element:

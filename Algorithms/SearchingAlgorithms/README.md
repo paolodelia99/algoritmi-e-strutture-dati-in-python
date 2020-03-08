@@ -227,8 +227,6 @@ L'algoritmo di Las Vegas è un algoritmo di ricerca randomizzato che da sempre l
 ritorna il l'indice corretto o chi informa del suo fallimento nel trovare l'elemento da cercare.
 Tuttavia, il tempo di esecuzione dell'Algoritmo di Las vegas dipende dall'input
 
-In computing, a Las Vegas algorithm is a randomized algorithm that always gives correct results; that is, it always produces the correct result or it informs about the failure. However, the runtime of a Las Vegas algorithm differs depending on the input
-
 #### ALgoritmo di Monte Carlo per la ricerca di un elemento
 
 
