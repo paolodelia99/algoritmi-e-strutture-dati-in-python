@@ -30,6 +30,6 @@ che rappresenti la classe di complssità della funzione.
 
 Quindi come si possono risolvere le ricorrenze:
 
-- metodo di sostituzione 
-- metodo dell'albero di ricorsione
-- metodo dell'esperto
+- **metodo di sostituzione** 
+- **metodo dell'albero di ricorsione**
+- **metodo dell'esperto**

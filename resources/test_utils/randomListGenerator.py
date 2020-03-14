@@ -1,5 +1,5 @@
 """
-In questo script vi sono i generatori causali di liste che ho utilizzato per testare gli
+In questo script ci sono i generatori causali di liste che ho utilizzato per testare gli
 algoritmi di ordinamento e ricerca
 """
 from random import randint
