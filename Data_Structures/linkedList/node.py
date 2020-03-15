@@ -26,3 +26,6 @@ class Node:
 
     def get_next(self):
         return self.next
+
+    def __str__(self):
+        return "key: "+ str(self.key)+""

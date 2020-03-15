@@ -1,5 +1,6 @@
 from node import Node
 
+
 class LinkedList:
     """
         Lista singolarmente concatenata
@@ -7,8 +8,9 @@ class LinkedList:
         Attributi:
             head :puntatore al primo elemento della lista
     """
+
     def __init__(self):
-        self.head = Node(None)
+        self.head = None
 
     def get_head(self):
         return self.head
@@ -16,17 +18,17 @@ class LinkedList:
     def is_empty(self):
         return self.head is None
 
-    def insert(self,node: Node):
+    def insert(self, node: Node):
         """
             Inserisco elemento all'inizio della lista
 
             Argomenti:
                 node (Node): nuovo nodo da inserire nella lista
         """
-        node.set_next(self.head.get_next())
-        self.head.set_next(node)
+        node.set_next(self.head.get_next() if self.head is not None else None)
+        self.head = node
 
-    def insert_after(self, node: Node,new_node: Node):
+    def insert_after(self, node: Node, new_node: Node):
         """
             Inserice new_node dopo node
 
@@ -37,7 +39,7 @@ class LinkedList:
         new_node.set_next(node.get_next())
         node.set_next(new_node)
 
-    def remove_after(self,node: Node):
+    def remove_after(self, node: Node):
         """
             Rimuove il nodo successivo al nodo passato per parametro
 
@@ -53,7 +55,7 @@ class LinkedList:
             rimuove il primo nodo
         """
         obsolete_node = self.head
-        self.head = self.head.get_next
+        self.head = self.head.get_next()
         del obsolete_node
 
     def list_search(self, key):
@@ -72,3 +74,10 @@ class LinkedList:
             node = node.get_next()
 
         return node
+
+    def print_list(self):
+        node = self.head
+
+        while node is not None:
+            print(node)
+            node = node.get_next()
