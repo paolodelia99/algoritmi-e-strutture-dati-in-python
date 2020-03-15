@@ -30,7 +30,8 @@ Mentre nella cartella resouces contienete tutte le immagini che ho utilizzato ne
 `B` - Beginner, `A` - Advanced
 
 * `B` [Linked List](Data_Structures/linkedList/linkedList.py)
-* `B` [Doubly Linked List](Data_Structures/linkedList/doubleLinkedList.py)
+* `B` [Double Linked List](Data_Structures/linkedList/doubleLinkedList.py)
+* `B` [Circular Double Linked List](Data_Structures/linkedList/circularDoubleLinkedList.py)
 * `B` [Queue](Data_Structures/coda/coda_array_monodimensionale.py) - versione con array monodimesionale
 * `B` [Queue](Data_Structures/coda/coda_array_circolare.py) - versione con array circolare
 * `B` [Stack](Data_Structures/stack/stack.py)
@@ -115,7 +116,7 @@ Per una data funzione <em>g(n)</em>, indichiamo con Θ(<em>g(n)</em>) <em>l'insi
 
 <br/>
 
-Θ(<em>g(n)</em>) = {<em>f(n)</em> : esistono delle costanti positive c<sub>1</sub>, c<sub>2</sub> e n<sub>0</sub> tali che
+Θ(<em>g(n)</em>) = { <em>f(n)</em> : esistono delle costanti positive c<sub>1</sub>, c<sub>2</sub> e n<sub>0</sub> tali che
                     0 ≤ c<sub>1</sub>g(n) ≤ f(n) ≤ c<sub>2</sub>g(n) per ogni <em>n</em>  ≥ n<sub>0</sub> }
 
 Graficamente succede questo:
@@ -147,7 +148,7 @@ Per una data funzione <em>g(n)</em>, indichiamo con Ω(<em>g(n)</em>) <em>l'insi
 
 <br/>
 
-Ω(<em>g(n)</em>) = {<em>f(n)</em> : esistono delle costanti positive c e n<sub>0</sub> tali che
+Ω(<em>g(n)</em>) = { <em>f(n)</em> : esistono delle costanti positive c e n<sub>0</sub> tali che
                     0 ≤ cg(n) ≤ f(n) per ogni <em>n</em>  ≥ n<sub>0</sub> }
 
 Graficamente succede questo:
