@@ -20,7 +20,10 @@ class CircularDbLinkedList(DoubleLinkedList):
         """
         new_node.set_next(node.get_next())
         new_node.set_prev(node)
-        node.get_next().set_prev(new_node)
+        # fixme: è sbagliato aggiustalo
+        next_node = node.get_next()
+        next_node.set_prev(new_node)
+
         node.set_next(new_node)
 
     def insert_end(self, node: Node):

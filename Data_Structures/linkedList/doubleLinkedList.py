@@ -23,19 +23,6 @@ class DoubleLinkedList:
     def get_tail(self):
         return self.tail
 
-    def insert(self, node: Node):
-        """
-            Inserisco l'elemento all'inizio della lista
-
-            Argomenti:
-                node (Node): nuovo nodo da inserire
-        """
-        node.set_next(self.head.get_next() if self.head is not None else None)
-        if self.head is not None:
-            self.head.set_prev(node)
-        self.head = node
-        node.set_prev(None)
-
     def insert_after(self, node: Node, new_node: Node):
         """
             Inserice new_node dopo node
@@ -83,8 +70,6 @@ class DoubleLinkedList:
         if self.head is None:
             self.head = node
             self.tail = node
-            node.set_prev(None)
-            node.set_next(None)
         else:
             self.insert_before(self.head, node)
 
@@ -98,7 +83,7 @@ class DoubleLinkedList:
         if self.tail is None:
             self.insert_beginning(node)
         else:
-            self.insert_after(self.head, node)
+            self.insert_after(self.tail, node)
 
     def remove(self, node: Node):
         """
