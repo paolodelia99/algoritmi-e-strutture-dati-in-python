@@ -1,6 +1,6 @@
 # Sorting Algorithms
 
-Un classico problema algoritmico consiste di ordinare una sequenza di n elementi. 
+Un classico problema algoritmico consiste di ordinare una sequenza di *n* elementi. 
 Per poter ordinare tale le sequenza è necessario che gli elementi appartengano tutti ad un insieme dove è definita una relazione d'ordine; ossia, presi due elementi a scelta, deve sempre essere possibile accertare quale venga prima e quale dopo. Dunque per poter ordinare è necessario che esista:
 
 - Una chiave per ogni elemento
@@ -46,7 +46,7 @@ BUBBLE-SORT(A)
 - **Compessità Temporale**:
    - Caso Peggiore O(n<sup>2</sup>)
    - Caso Medio O(n<sup>2</sup>)
-   - Caso Ottimo O(n)
+   - Caso Ottimo O(n<sup>2</sup>)
 
 ---
 
@@ -125,11 +125,11 @@ risoluzione **ricorsivo**, sfruttando la tecnica **Divide et Impera**.
 
 Concettualmente, l'algoritmo funziona nel seguente modo:
 
-* Se la sequenza da ordinare ha lunghezza 0 oppure 1, è già ordinata. Altrimenti:
+* Se la sequenza da ordinare ha lunghezza 1, è già ordinata. Altrimenti:
 * La sequenza viene divisa (*divide*) in due metà( se la sequenza contiene un 
 numero dispari di elementi, viene divisa in due sottosequenza dove la prima avrà un
 elemento in più rispetto alla seconda)
-* Ognuna di queste sottosequenza viene ordinata, applicando **ricorsivamente** l'algoritmo(*impera*)
+* Ognuna di queste sottosequenze viene ordinata, applicando **ricorsivamente** l'algoritmo(*impera*)
 * Le due sottosequenze ordinate vengono unite (*combina*). Per fare questo, si estrae ripetutamente il
 minimo delle sottosequenza e lo si pone nella sequenza in uscita, che risulterà ordinata.
 
