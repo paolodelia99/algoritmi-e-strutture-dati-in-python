@@ -174,6 +174,12 @@ MERGE(A,p,q,r)
 
 ---
 
+### Bitonic Sort
+
+- [ ] todo
+
+---
+
 ### QuickSort
 
 Quicksort è un algoritmo di ordinamento **ricorsivo in place non stabile**. Appartiene alla classe degli algoritmi **divide et impera**,
