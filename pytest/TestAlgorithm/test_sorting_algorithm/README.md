@@ -31,4 +31,4 @@ mentre il corrispettivo test l'ho chiamato test_sample_list. Per verificare se l
 ciasciuna con un numero di elementi che va da 10 a 22 ( dato che anche il numero di elementi della lista è generato casualmente)
 Per verificare la corretezza dell'algoritmo da testare operato utilizzando lo schema generale sopra descritto per ciascuna lista creata
 
-- il testo test l'ho effetuato su liste veramente grandi...(da finire)
+- il terzo test l'ho effetuato su liste veramente grandi formate da un numero casuale di elementi (tra 10000 e 100000) con elementi casuali tra 1 e 100000

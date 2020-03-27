@@ -2,10 +2,10 @@
 
 **da rifare in italiano**
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+Quando contribuisci a questa repository, ti preghiamo prima di discutere la modifica che desideri apportare tramite una issue,
+e-mail o qualsiasi altro metodo con i proprietari di questa repository prima di apportare una modifica.
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+Nota che abbiamo un codice di condotta, seguilo in tutte le tue interazioni con il progetto.
 
 ## Pull Request Process
 
@@ -18,9 +18,15 @@ Please note we have a code of conduct, please follow it in all your interactions
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
    do not have permission to do that, you may request the second reviewer to merge it for you.
 
-## Code of Conduct
+## Codice di condotta
 
-### Our Pledge
+### Il nostro impegno
+
+Nell'interesse di promuovere un ambiente aperto e accogliente, noi 
+collaboratori e manutentori ci impegnano a partecipare al nostro progetto e
+la nostra comunità un'esperienza senza molestie per tutti, indipendentemente dall'età, dal corpo
+dimensione, disabilità, etnia, identità ed espressione di genere, livello di esperienza,
+nazionalità, aspetto personale, razza, religione o identità sessuale e orientamento.
 
 In the interest of fostering an open and welcoming environment, we as
 contributors and maintainers pledge to making participation in our project and
@@ -29,7 +35,7 @@ size, disability, ethnicity, gender identity and expression, level of experience
 nationality, personal appearance, race, religion, or sexual identity and
 orientation.
 
-### Our Standards
+### I nostri standard
 
 Examples of behavior that contributes to creating a positive environment
 include:
@@ -51,7 +57,7 @@ advances
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
-### Our Responsibilities
+### Le nostre Responsabilità
 
 Project maintainers are responsible for clarifying the standards of acceptable
 behavior and are expected to take appropriate and fair corrective action in
