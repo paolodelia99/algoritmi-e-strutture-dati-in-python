@@ -1,5 +1,12 @@
 # Searching Algorithm
 
+- **[Ricerca Binaria](#riceca-binaria-o-dicotomica)**
+- **[Ricerca Lineare](#riceca-lineareo-sequenziale)**
+- **[Jump Search](#jump-search)**
+- **[Interpolation Search](#iterpolation-search)**
+- **[Random Search](#random-search)**
+- **[Las vegas Algorithm](#las-vegas-algorithm)**
+
 ### Riceca Binaria (o Dicotomica)
 
 La ricerca binaria( o ricerca dicotomica ) è un algoritmo di ricerca che indice 

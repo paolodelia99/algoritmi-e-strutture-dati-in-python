@@ -18,6 +18,13 @@ Un algoritmo di ordinamento su array si dice sul posto se in ogni dato istante a
 
 ## Algoritmi
 
+- **[Bubble sort](#bubble-sort)**
+- **[Selection sort](#selection-sort)**
+- **[Insertion sort](#insertion-sort)**
+- **[Merge sort](#merge-sort)**
+- **[Quick sort](#quicksort)**
+- **[Counting sort](#counting-sort)**
+
 ### Bubble sort
 
 Il bubble sort o bubblesort è un semplice algoritmo di ordinamento per ordinare array.

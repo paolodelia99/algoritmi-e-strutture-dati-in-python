@@ -1,20 +1,17 @@
-"""Insertion Sort
+def insertion_sort(A):
+    """
+        Insertion sort
 
-Insertion sort è un algoritmo di ordinamento in place, cioè ordina
-l'array senza doverne creare una copia, risparimando memoria.
+        Argomenti:
+            A (list): array da ordinare
+    """
+    for j in range(1, len(A)):
 
-Complessità temporale: O(n^2)
-"""
+        key = A[j]
+        i = j - 1
 
-def insertion_sort(list):
-    for j in range(1,len(list)):
+        while i >= 0 and A[i] > key:
+            A[i + 1] = A[i]
+            i = i - 1
 
-        key = list[j]
-        i = j-1
-
-        while i>=0 and list[i]>key:
-
-            list[i+1] = list[i]
-            i = i-1
-
-        list[i+1] = key
+        A[i + 1] = key
