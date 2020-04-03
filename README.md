@@ -4,16 +4,15 @@ Ecco finalmente la guida di algoritmi e strutture dati in <b>ptyhon!</b>
 
 ## Folder Structure
 
-Tutte le implementazioni degli algoritmi sono nella cartella <b>Algorithms</b>, mentre le implementazioni della strutture dai sono nel cartella <b>Data Strucutres</b>.
+Tutte le implementazioni degli algoritmi sono nella cartella **Algorithms**, mentre le implementazioni della strutture dai sono nel cartella <b>Data Strucutres</b>.
 All'interno di ognuna di queste cartelle sia gli algoritmi che le strutture dati sono raggruppate ognuno in una cartelle che li rappresenta.
 
 <br/>
 
-Per testare la correttezza degli algoritmi e strutture dati codificati, ho creato la cartella pytest
-dove ho effetuato gli unit test ( ovviamente il framework utilizzato è pytest)
+Il **testing** degli algoritmi e strutture dati implementate è nella cartella pytest
 
 
-Mentre nella cartella resouces contienete tutte le immagini che ho utilizzato nei README
+Mentre nella cartella **resouces** contienete tutte le immagini che utilizzate nei README
 
 ```
 .
@@ -35,13 +34,16 @@ Mentre nella cartella resouces contienete tutte le immagini che ho utilizzato ne
 * `B` [Queue](Data_Structures/coda/coda_array_monodimensionale.py) - versione con array monodimesionale
 * `B` [Queue](Data_Structures/coda/coda_array_circolare.py) - versione con array circolare
 * `B` [Stack](Data_Structures/stack/stack.py)
-* `B` [Heap](Data_Structures/heap/heap.py) - max and min heap versions
+* `B` [Heap](Data_Structures/heap/heap.py) 
 
 ## Algoritmi
 
 `B` - Beginner, `A` - Advanced
 
 ### Algoritmi per argomento
+
+* **Math**
+    * `A` Fibonacci con Programmazione dinamica
 
 * **Sorting**
   * `B` [Bubble Sort](Algorithms/SortingAlgorithms/bubbleSort.py)
@@ -68,9 +70,17 @@ Mentre nella cartella resouces contienete tutte le immagini che ho utilizzato ne
 ### Algoritmi per paradigma
 
 * **Forza Bruta**
-* **Algoritmi Golosi**
+    * `A` [Linear Search](Algorithms/SearchingAlgorithms/deterministicSearch.py)
+* **Algoritmi Golosi (Greedy Algorithms)**
 * **Dividi et Impera**
+    * `A` [Merge Sort](Algorithms/SortingAlgorithms/mergeSort.py)
+    * `A` [Quick Sort](Algorithms/SortingAlgorithms/quickSort.py)
+    * `A` [Max SubArray](Algorithms/DividiEtImpera/max-subarray-recursive.py)
+    * `A` [Moltiplicazione Matrici](Algorithms/DividiEtImpera/squareMatrixMultiply.py)
 * **Programmazione Dinamica**
+    * `B` [Fibonacci](Algorithms/DynamicProgramming/fibonacciDyn.py)
+    * `A` [Problema dello ziano 0/1](Algorithms/DynamicProgramming/01_knapsackProblem.py)
+    * `A` [Maxsub Array(Kandane algorithm)](Algorithms/DynamicProgramming/max-subarray-iterative.py)
 * **Backtraking**
     
 ## Nozioni Basilari
@@ -161,3 +171,28 @@ Graficamente succede questo:
 ### Contribuizione
 
 Si prega di leggere CONTRIBUTING.md per i dettagli sul codice di condotta e il processo di invio delle richieste pull.
+
+### Todo
+
+- [ ] Da migliorare la sezione delle notazioni basilari
+
+#### Algoritmi 
+
+- [ ] Radix sort
+- [ ] Bucket sort
+- [ ] Sequenza moltiplicazioni matrici (Dynamic Programming)
+
+#### Strutture dati
+- [ ] ALberi
+    - [ ] Alberi binari
+    - [ ] Alberi Radicati
+    - [ ] Alberi rosso/neri
+- [ ] Trie
+- [ ] Tavole Hash
+
+#### Test
+- [ ] stack
+- [ ] coda
+- [ ] Dividi et impera
+- [ ] counting sort
+- [ ] Dynamic Programming
