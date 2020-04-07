@@ -195,7 +195,7 @@ dal momento che scompone ricorsivamente i dati da processare in sottoprocessi.
 #### Come funziona
 
 I passi che quicksort compie sono i seguenti: 
-- <b>(Divide)</b> scompone ricorsivamente i dati da processare in sottoprocessi.La scomposizione viene effetuata dalla procedura 
+- <b>(Divide)</b> scompone ricorsivamente i l'array da ordinare in sottoarray.La scomposizione viene effetuata dalla procedura 
 <b>partiton(A, p, r)</b> che partiziona la lista A[p..r] in due sottoarray A[p..q-1] e A[q+1..r] tali che ogni elemento di A[p..q-1] sia minore o uguale ad A[q] che, a sua volta,
 è minore o uguale a ogni elemento di A[q+1..r]. Questa procedura ritorna l'indice q.
 - <b>(Impera)</b> oridna i due sottoarray A[p..q-1] e A[q+1..r] chiamando ricorsivmente quicksort
@@ -285,3 +285,40 @@ return PARTITION(A, p, r)
 ```
 
 ### Counting Sort
+
+Il **Counting sort** è un algoritmo di ordinamento per valori numerici con complessità linieare. 
+L'algoritmo presuppone che ciascuno degli *n* elementi di input sia un numero intero compreso nell'intervallo
+da 0 a *k*, per qualche intero *k*.
+
+#### Come funziona
+
+L'algoritmo utilizza un'array di appoggio, di dimensione pari all'intervallo dei valori, dove va a memorizzare tutte le occorenze di ciscuna valore presente 
+nell'array da ordinare.Successivamente eseguendo una scansione di C si modifica il valore dei
+suoi elementi, assegnando ad ogni ci il numero di elementi di A minori o uguali ad i.
+Infine, con una terza ed ultima scansione dell’array C si costruisce un nuovo array B ordinato
+#### PseudoCodice
+
+```text
+// A array da ordinare
+// B array A ordinato 
+// k valore massimo di A
+COUNTING-SORT(A,B,k)
+    C = new Array(k)  //inizializzazione dell'array di appoggio
+    for j = 1 to A.length
+        C[A[j]] = C[A[j]] + 1
+
+    for i = 1 to k
+        C[i] = C[i] + C[i + 1]
+
+    for j = A.length downto 1
+        B[C[A[j]]] = A[j]
+        C[A[j]] = C[A[j]] -1
+```
+
+- **Compessità Temporale**:
+   - Caso Peggiore O(k + n) se k ∉ O(n), 
+                   θ(n)     se k ∈ O(n)
+   - Caso Medio O(k + n) se k ∉ O(n), 
+                θ(n)     se k ∈ O(n)
+   - Caso Migliore O(k + n) se k ∉ O(n), 
+                   θ(n)     se k ∈ O(n)
