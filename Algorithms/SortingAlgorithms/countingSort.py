@@ -6,13 +6,16 @@ def counting_sort(A, B, k):
         B (list): lista vuota che conterrà gli elementi di A ordinati a fine esecuzione
         k(int): massimo elemento di A
     """
-    tmp_list = [] # lista temporenea di dimensione k
-    for i in k:
-        tmp_list[i] = 0
-    for j in range(len(A)):
-        tmp_list[A[j]] = tmp_list[A[j]] + 1
-    for i in range(1, k):
-        tmp_list[i] = tmp_list[i] + tmp_list[i - 1]
-    for j in range(len(A), -1, -1):
-        B[tmp_list[A[j]]] = A[j]
-        tmp_list[A[j]] = tmp_list[A[j]] - 1
+    C = [0] * (k+1) # lista temporenea di dimensione k
+
+    for j in range(0,len(A)):
+        C[A[j]] += 1
+
+    for i in range(1, k+1):
+        C[i] += C[i - 1]
+
+    i = len(A) - 1
+    while i >= 0:
+        B[C[A[i]] - 1] = A[i]
+        C[A[i]] -= 1
+        i -= 1
