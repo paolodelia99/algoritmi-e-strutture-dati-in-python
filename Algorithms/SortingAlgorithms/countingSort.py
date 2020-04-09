@@ -6,12 +6,12 @@ def counting_sort(A, B, k):
         B (list): lista vuota che conterrà gli elementi di A ordinati a fine esecuzione
         k(int): massimo elemento di A
     """
-    C = [0] * (k+1) # lista temporenea di dimensione k
+    C = [0] * (k + 1)  # lista temporenea di dimensione k
 
-    for j in range(0,len(A)):
+    for j in range(0, len(A)):
         C[A[j]] += 1
 
-    for i in range(1, k+1):
+    for i in range(1, k + 1):
         C[i] += C[i - 1]
 
     i = len(A) - 1
