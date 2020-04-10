@@ -24,6 +24,8 @@ Un algoritmo di ordinamento su array si dice sul posto se in ogni dato istante a
 - **[Merge sort](#merge-sort)**
 - **[Quick sort](#quicksort)**
 - **[Counting sort](#counting-sort)**
+- **[Radix sort](#radix-sort)**
+- **[Bucket sort](#bucket-sort)**
 
 ### Bubble sort
 
