@@ -341,3 +341,48 @@ RadixSort(A,d)
 
 - **Complessità Temporale**:
     - se utilizza counting sort come algoritmo di ordinamento stabile θ(d(k+ n)), dove *d* è il numero di cifre dell'elemento massimo dell'array
+    
+### Bucket sort
+
+Bucket sort è un algoritmo di ordinamento non in loco che presuppone che l'input sia estratto 
+da una distribuzione uniforme. Come counting sort, bucket sort  è veloce perchè fa un ipotesi sull'input: 
+esso suppone che l'input sia generato da un processo casuale che distribuisce gli elementi uniformemente e indipendentemente
+nell'intervallo [0,1). 
+
+#### Come funziona
+
+Bucket sort divide l'intervallo [0,1) in *n* sottointervalli della stessa dimensione, chiamati **bucket**(cesto). Ciascun 
+valore dell'array è inserito nel bucket a cui appartiene, i valori all'interno di ogni bucket vengono ordinati e l'algoritmo si conclude con 
+la concatenazione dei valori contenuti nei bucket. Dato che l'algoritmo assume che l'input sia uniformemente e indiependentemente
+nell'intervallo [0,1), non si aspetta che molti numeri vadano a finire nello stesso bucket.
+
+#### Pseudocodice
+
+    bucketSort(A,n)
+        B = new Array(n-1)
+        
+        //Crea buckets
+        for i = 0 to n
+            B[i] = []
+        
+        //Inserisce ciascun elemento nel proprio bucket di appartenenza
+        for j = 0 to A.length
+            index_bucket = Math.floor(A[j])
+            B[index_bucket = A[j]
+            
+        //Ordina i singoli Bucket 
+        for i = 0 to n
+            insertionSort(B[i])
+             
+        //concatena i bucket
+        k = 0
+        for i = 0 to n
+            for j = 0 to B[i].length
+                A[k] = B[i][j]
+                k++
+        
+        return A
+
+- **Compessità temporale**
+    - Caso Peggiore: O(n<sup>2</sup>)
+    - Caso Medio: O(n + (n<sup>2</sup>/k) + k) dove *k* è il numero di bucket, se k = θ(n) allora il tempo diventa O(n) 
