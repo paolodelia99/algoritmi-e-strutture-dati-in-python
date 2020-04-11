@@ -1,4 +1,4 @@
-def merge_sort(A, left, right):
+def merge_sort(A: list, left: int, right: int):
     """
         Implementazione ricoriva di merge sort
 
@@ -14,7 +14,17 @@ def merge_sort(A, left, right):
         merge(A, left, right, mid)
 
 
-def merge(A, left_index, right_index, middle):
+def merge(A: list, left_index : int, right_index: int, middle: int):
+    """
+        Procedura merge che confronta i due sottoarray A(left_index, middle)
+        e A(middle+1,right_index) e li riodina nell'array iniziale
+
+        Parametri:
+            A (list): lista di elementi da oridinare
+            left_index (int): indice che punta al primo elemento dell'array
+            right_index (int)
+            middle (int)
+    """
     # Copio i due array che voglio unire
     # il secondo parametro non è inclusivo, si deve incrementare di 1
     left_copy = A[left_index:middle + 1]

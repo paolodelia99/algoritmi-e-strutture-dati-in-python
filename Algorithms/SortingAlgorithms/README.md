@@ -140,7 +140,7 @@ numero dispari di elementi, viene divisa in due sottosequenza dove la prima avr�
 elemento in più rispetto alla seconda)
 * Ognuna di queste sottosequenze viene ordinata, applicando **ricorsivamente** l'algoritmo(*impera*)
 * Le due sottosequenze ordinate vengono unite (*combina*). Per fare questo, si estrae ripetutamente il
-minimo delle sottosequenza e lo si pone nella sequenza in uscita, che risulterà ordinata.
+minimo della sottosequenza e lo si pone nella sequenza in uscita, che risulterà ordinata.
 
 ####Pseudocodice
 
@@ -155,24 +155,35 @@ MERGE-SORT(A,p,r)
 
 ```text
 MERGE(A,p,q,r)
-    num_1 = q - p + 1
-    num_2 = r - q
-    L = new Array(num_1+1)
-    R = new Array(num_2+1)
-    for i = 1 to num_1
-        L[i] = A[p+i-1]
-    for j = 1 to num_2
-        R[j] = A[q+j]
-    L[num_1+1] infinity
-    R[num_2+1] = infinity
-    i = 1 
-    j = 1
-    for k = p to r
-        if L[i] <= R[j]
-            A[k] = L[i]
-            i = i + 1
-        else if A[k] = R[j]
-            j = j + 1
+    
+    leftCopy = A[p..q] // copio il sottoarray A[p..q] in leftCopy
+    rightCopy = A[q+1..r] // copio il sottoarray A[p..q] in rightCopy
+    
+    //Inizializzo i contatori che si utilizzeranno per tenere traccia 
+    //degli indici dell'array
+    leftIndex = 0, rightIndex = 0 
+    sortedIndex leftIndex
+
+    while leftIndex < leftCopy.length and rightIndex < rightCopy.length
+        
+        if leftCopy[leftIndex] <= rightCopy[rightIndex]
+            A[sortedIndex] = leftCopy[leftIndex]
+            leftIndex++
+        else
+            A[sortedIndex] = rightCopy[rightIndex]
+            rightIndex++
+
+        sortedIndex++
+
+    while leftIndex < leftCopy.length
+        A[sortedIndex] = leftCopy[leftIndex]
+        leftIndex++
+        sortedIndex++
+
+    while rightIndex < rightCopy.length
+        A[sortedIndex] = rightCopy[rightIndex]
+        rightIndex++
+        sortedIndex++
 ```
 
 - **Compessità Temporale**:
@@ -197,7 +208,7 @@ dal momento che scompone ricorsivamente i dati da processare in sottoprocessi.
 #### Come funziona
 
 I passi che quicksort compie sono i seguenti: 
-- <b>(Divide)</b> scompone ricorsivamente i l'array da ordinare in sottoarray.La scomposizione viene effetuata dalla procedura 
+- <b>(Divide)</b> scompone ricorsivamente l'array da ordinare in sottoarray.La scomposizione viene effetuata dalla procedura 
 <b>partiton(A, p, r)</b> che partiziona la lista A[p..r] in due sottoarray A[p..q-1] e A[q+1..r] tali che ogni elemento di A[p..q-1] sia minore o uguale ad A[q] che, a sua volta,
 è minore o uguale a ogni elemento di A[q+1..r]. Questa procedura ritorna l'indice q.
 - <b>(Impera)</b> oridna i due sottoarray A[p..q-1] e A[q+1..r] chiamando ricorsivmente quicksort
@@ -298,6 +309,7 @@ L'algoritmo utilizza un'array di appoggio, di dimensione pari all'intervallo dei
 nell'array da ordinare.Successivamente eseguendo una scansione di C si modifica il valore dei
 suoi elementi, assegnando ad ogni ci il numero di elementi di A minori o uguali ad i.
 Infine, con una terza ed ultima scansione dell’array C si costruisce un nuovo array B ordinato
+
 #### PseudoCodice
 
 ```text
@@ -319,11 +331,11 @@ COUNTING-SORT(A,B,k)
 
 - **Compessità Temporale**:
    - Caso Peggiore O(k + n) se k ∉ O(n), 
-                   θ(n)     se k ∈ O(n)
+                   Θ(n)     se k ∈ O(n)
    - Caso Medio O(k + n) se k ∉ O(n), 
-                θ(n)     se k ∈ O(n)
+                Θ(n)     se k ∈ O(n)
    - Caso Migliore O(k + n) se k ∉ O(n), 
-                   θ(n)     se k ∈ O(n)
+                   Θ(n)     se k ∈ O(n)
                    
                    
 ### Radix sort
@@ -342,7 +354,7 @@ RadixSort(A,d)
 ```
 
 - **Complessità Temporale**:
-    - se utilizza counting sort come algoritmo di ordinamento stabile θ(d(k+ n)), dove *d* è il numero di cifre dell'elemento massimo dell'array
+    - se utilizza counting sort come algoritmo di ordinamento stabile Θ(d(k+ n)), dove *d* è il numero di cifre dell'elemento massimo dell'array
     
 ### Bucket sort
 
@@ -387,4 +399,4 @@ nell'intervallo [0,1), non si aspetta che molti numeri vadano a finire nello ste
 
 - **Compessità temporale**
     - Caso Peggiore: O(n<sup>2</sup>)
-    - Caso Medio: O(n + (n<sup>2</sup>/k) + k) dove *k* è il numero di bucket, se k = θ(n) allora il tempo diventa O(n) 
+    - Caso Medio: O(n + (n<sup>2</sup>/k) + k) dove *k* è il numero di bucket, se k = Θ(n) allora il tempo diventa O(n) 

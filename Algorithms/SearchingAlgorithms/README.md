@@ -221,6 +221,10 @@ INTERPOLATION-SEARCH(A,el)
 
 ### Ricerca utilizzando la casualità
 
+#### Randomized Select
+
+- [ ] todo (readme)
+
 #### Random Search
 The Random search algorithm is a search algorithm that find an element in a list
 by choosing a random index every time until the all the indexes are choosen or when the

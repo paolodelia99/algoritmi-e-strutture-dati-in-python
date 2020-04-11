@@ -30,7 +30,24 @@ def big_random_list_generator() -> list:
     return arr
 
 
-def zero_one_random_list_generator(n : int) -> list:
+def random_list_generator(dim: int, min: int, max: int) -> list:
+    """
+        Argomenti:
+            dim (int): dimensione della lista
+            min (int): minimo elemento del range dei numeri casuali da generare
+            max (int): massimo elemento del range dei numeri casuali da generare
+
+        Valore di ritorno:
+            Ritorna lista di numeri interi di dimensione dim con numeri casuali compresi tra min e max
+    """
+    arr = []
+    for _ in range(dim):
+        arr.append(randint(min, max + 1))
+
+    return arr
+
+
+def zero_one_random_list_generator(n: int) -> list:
     """
         generatore di una lista di numeri compresi nell'intervallo [0,1)
 
