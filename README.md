@@ -1,4 +1,4 @@
-# Algoritmi e Strutture dati in Python 
+# Algoritmi e Strutture dati in Python
 
 Ecco finalmente la guida di algoritmi e strutture dati in <b>ptyhon!</b>
 
@@ -18,10 +18,11 @@ Mentre nella cartella **resouces** contienete tutte le immagini che utilizzate n
 .
 ├── README.md
 ├── .gitignore
-├── Algorithms
-├── pytest
 ├── resources
-└── Data Structures
+├── algorithms
+├── test
+├── resources
+└── data_structures
 ```
 
 ## Strutture Dati
@@ -34,7 +35,7 @@ Mentre nella cartella **resouces** contienete tutte le immagini che utilizzate n
 * `B` [Queue](data_structures/coda/coda_array_monodimensionale.py) - versione con array monodimesionale
 * `B` [Queue](data_structures/coda/coda_array_circolare.py) - versione con array circolare
 * `B` [Stack](data_structures/stack/stack.py)
-* `B` [Heap](data_structures/heap/heap.py) 
+* `B` [Heap](data_structures/heap/heap.py)
 
 ## Algoritmi
 
@@ -57,7 +58,7 @@ Mentre nella cartella **resouces** contienete tutte le immagini che utilizzate n
 * **Sets**
   * `B` [Maximum Subarray](algorithms/DividiEtImpera/max-subarray-recursive.py) - versione ricorsiva
   * `A` [Maxium Subarray](algorithms/DynamicProgramming/max-subarray-iterative.py) - versione iterativa
-  
+
 
 * **Searching**
     * `B` [Binary Search/ ricerca dicotomica](algorithms/SearchingAlgorithms/binarySearch.py)
@@ -66,7 +67,7 @@ Mentre nella cartella **resouces** contienete tutte le immagini che utilizzate n
     * `B` [Interpolation Search](algorithms/SearchingAlgorithms/interpolationSearch.py)
     * `B` [Random Search](algorithms/SearchingAlgorithms/randomSearch.py)
     * `B` [Scramble Search](algorithms/SearchingAlgorithms/scambleSearch.py)
-    
+
 ### Algoritmi per paradigma
 
 * **Forza Bruta**
@@ -82,11 +83,11 @@ Mentre nella cartella **resouces** contienete tutte le immagini che utilizzate n
     * `A` [Problema dello ziano 0/1](algorithms/DynamicProgramming/01_knapsackProblem.py)
     * `A` [Maxsub Array(Kandane algorithm)](algorithms/DynamicProgramming/max-subarray-iterative.py)
 * **Backtraking**
-    
+
 ## Nozioni Basilari
 
-Dato che per risolvere un determinato problemo molto spesso esistono molteplici algoritmi risolutori, 
-il problema che si pone è quello di riuscire a trovare un algoritmo corretto in modo tale da 
+Dato che per risolvere un determinato problemo molto spesso esistono molteplici algoritmi risolutori,
+il problema che si pone è quello di riuscire a trovare un algoritmo corretto in modo tale da
 portelo confrontare con un altro algoritmo anch'esso corretto e poter decidere quale sia il
 "miglore" per risolvere lo stesso problema.
 
@@ -97,25 +98,25 @@ Per fare ciò c'è bisogno di introdurre un concetto basilare che rigurda lo stu
 
 ### Complessità Computazionale
 
-La complessità computazionale è lo studio della quantità di risorse (memoria e tempo di 
-calcolo) necessari a un certo algoritmo per risolvere un problema dato. 
+La complessità computazionale è lo studio della quantità di risorse (memoria e tempo di
+calcolo) necessari a un certo algoritmo per risolvere un problema dato.
 
 <br/>
 
 Quindi teoricamente per ogni input bisognerebbe studiare quello che è il tempo di esecuzione di un algoritmo,
-ma i teorici dell’informatica hanno introdotto delle notazioni che permettono di semplificare 
-la rappresentazione della complessità computazionale di un algoritmo. 
+ma i teorici dell’informatica hanno introdotto delle notazioni che permettono di semplificare
+la rappresentazione della complessità computazionale di un algoritmo.
 
 <br/>
 
-Infatti hanno notato che il fattore determinante che ci permette di scegliere l'algoritmo migliore è 
- il suo <b>tasso di crescita</b>. Per <b>tasso di crescita</b> si intende la velocità con cui cresce il tempo 
-di esecuzione all'aumentare della dimensione dell'input <em>al limite</em>, quando la dimensione dell'input cresce senza 
+Infatti hanno notato che il fattore determinante che ci permette di scegliere l'algoritmo migliore è
+ il suo <b>tasso di crescita</b>. Per <b>tasso di crescita</b> si intende la velocità con cui cresce il tempo
+di esecuzione all'aumentare della dimensione dell'input <em>al limite</em>, quando la dimensione dell'input cresce senza
 limitazioni. Questo si chiama anche studiare l'efficenza <b>asintotica</b> degli algoritmi.
 
 <br/>
 
-Le notazioni che si usano per descrivere il tempo di esecuzione asintotico sono definite in 
+Le notazioni che si usano per descrivere il tempo di esecuzione asintotico sono definite in
 termini di funzioni il cui dominio è l'insieme dei numeri naturali. Tali notazioni sono comode per descrivere la funzione
 <em>T(n)</em>, tempo di esecuzione dell'algoritmo, che di solito è definita soltanto con dimensioni
 intere dell'input.
@@ -143,7 +144,7 @@ Per una data funzione <em>g(n)</em>, indichiamo con O(<em>g(n)</em>) <em>l'insie
 
 O(<em>g(n)</em>) = {
                     <em>f(n)</em> : esistono delle costanti positive c e n<sub>0</sub> tali che
-                    0 ≤ f(n) ≤ cg(n) per ogni <em>n</em>  ≥ n<sub>0</sub> 
+                    0 ≤ f(n) ≤ cg(n) per ogni <em>n</em>  ≥ n<sub>0</sub>
                     }
 
 Graficamente succede questo:
@@ -170,7 +171,7 @@ Graficamente succede questo:
 
 ### Contribuizione
 
-Si prega di leggere CONTRIBUTING.md per i dettagli sul codice di condotta e il processo di invio delle richieste pull.
+Si prega di leggere [CONTRIBUTING.md](CONTRIBUTING.md) per i dettagli sul codice di condotta e il processo di invio delle richieste pull.
 
 ### Todo
 
@@ -178,11 +179,13 @@ Si prega di leggere CONTRIBUTING.md per i dettagli sul codice di condotta e il p
 - [ ] aggingere readme stastistiche d'ordine
 - [ ] aggiunge i nuovi algoritmi alla lista iniziale
 
-#### Algoritmi 
+#### Algoritmi
 
-- [ ] Radix sort
-- [ ] Bucket sort
+- [x] Radix sort
+- [x] Bucket sort
 - [ ] Sequenza moltiplicazioni matrici (Dynamic Programming)
+- [ ] Greedy Algorithms
+- [ ] Algoritmi Programmazione dinamica
 
 #### Strutture dati
 - [ ] ALberi
@@ -195,6 +198,6 @@ Si prega di leggere CONTRIBUTING.md per i dettagli sul codice di condotta e il p
 #### Test
 - [ ] stack
 - [ ] coda
-- [ ] Dividi et impera
-- [ ] counting sort
-- [ ] Dynamic Programming
+- [ ] Dividi et impera algorithms
+- [x] counting sort
+- [ ] Dynamic Programming algorithms

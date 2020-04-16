@@ -1,9 +1,12 @@
 ## Contributing
 
+I contributi alla repo *algoritmi e strutture dati in python* sono i benvenuti! Non possiamo farlo da soli.
+Puoi contribuire in diversi modi: spargi la voce, segnala bug, suggerimenti e contribuisci alla stesura del codice.
+
 **Regole Generali**
 
 - Cerca di seguire, il più possibile, le regole di formattazione e scrittura del codice
-- Non dimenticarti di testare il codice aggiunto, inserendo i relativi test nella cartella pytest.
+- Non dimenticarti di testare il codice aggiunto, inserendo i relativi test nella cartella test.
 
 **Contribuzione per i Nuovi Algoritmi o strutture dati**
 
