@@ -28,13 +28,13 @@ Mentre nella cartella **resouces** contienete tutte le immagini che utilizzate n
 
 `B` - Beginner, `A` - Advanced
 
-* `B` [Linked List](Data_Structures/linkedList/linkedList.py)
-* `B` [Double Linked List](Data_Structures/linkedList/doubleLinkedList.py)
-* `B` [Circular Double Linked List](Data_Structures/linkedList/circularDoubleLinkedList.py)
-* `B` [Queue](Data_Structures/coda/coda_array_monodimensionale.py) - versione con array monodimesionale
-* `B` [Queue](Data_Structures/coda/coda_array_circolare.py) - versione con array circolare
-* `B` [Stack](Data_Structures/stack/stack.py)
-* `B` [Heap](Data_Structures/heap/heap.py) 
+* `B` [Linked List](data_structures/linkedList/linkedList.py)
+* `B` [Double Linked List](data_structures/linkedList/doubleLinkedList.py)
+* `B` [Circular Double Linked List](data_structures/linkedList/circularDoubleLinkedList.py)
+* `B` [Queue](data_structures/coda/coda_array_monodimensionale.py) - versione con array monodimesionale
+* `B` [Queue](data_structures/coda/coda_array_circolare.py) - versione con array circolare
+* `B` [Stack](data_structures/stack/stack.py)
+* `B` [Heap](data_structures/heap/heap.py) 
 
 ## Algoritmi
 
@@ -46,41 +46,41 @@ Mentre nella cartella **resouces** contienete tutte le immagini che utilizzate n
     * `A` Fibonacci con Programmazione dinamica
 
 * **Sorting**
-  * `B` [Bubble Sort](Algorithms/SortingAlgorithms/bubbleSort.py)
-  * `B` [Selection Sort](Algorithms/SortingAlgorithms/selectionSort.py)
-  * `B` [Insertion Sort](Algorithms/SortingAlgorithms/insertionSort.py)
-  * `B` [Heap Sort](Data_Structures)
-  * `B` [Merge Sort](Algorithms/SortingAlgorithms/mergeSort.py)
-  * `B` [Quicksort](Algorithms/SortingAlgorithms/quickSort.py) - versione normale e anche la versione randomizzata
-  * `B` [Counting Sort](Algorithms/SortingAlgorithms/countingSort.py)
+  * `B` [Bubble Sort](algorithms/SortingAlgorithms/bubbleSort.py)
+  * `B` [Selection Sort](algorithms/SortingAlgorithms/selectionSort.py)
+  * `B` [Insertion Sort](algorithms/SortingAlgorithms/insertionSort.py)
+  * `B` [Heap Sort](data_structures)
+  * `B` [Merge Sort](algorithms/SortingAlgorithms/mergeSort.py)
+  * `B` [Quicksort](algorithms/SortingAlgorithms/quickSort.py) - versione normale e anche la versione randomizzata
+  * `B` [Counting Sort](algorithms/SortingAlgorithms/countingSort.py)
 
 * **Sets**
-  * `B` [Maximum Subarray](Algorithms/DividiEtImpera/max-subarray-recursive.py) - versione ricorsiva
-  * `A` [Maxium Subarray](Algorithms/DynamicProgramming/max-subarray-iterative.py) - versione iterativa
+  * `B` [Maximum Subarray](algorithms/DividiEtImpera/max-subarray-recursive.py) - versione ricorsiva
+  * `A` [Maxium Subarray](algorithms/DynamicProgramming/max-subarray-iterative.py) - versione iterativa
   
 
 * **Searching**
-    * `B` [Binary Search/ ricerca dicotomica](Algorithms/SearchingAlgorithms/binarySearch.py)
-    * `B` [Linear Search/ ricerca sequenziale](Algorithms/SearchingAlgorithms/deterministicSearch.py)
-    * `B` [Jump Search](Algorithms/SearchingAlgorithms/jumpSearch.py)
-    * `B` [Interpolation Search](Algorithms/SearchingAlgorithms/interpolationSearch.py)
-    * `B` [Random Search](Algorithms/SearchingAlgorithms/randomSearch.py)
-    * `B` [Scramble Search](Algorithms/SearchingAlgorithms/scambleSearch.py)
+    * `B` [Binary Search/ ricerca dicotomica](algorithms/SearchingAlgorithms/binarySearch.py)
+    * `B` [Linear Search/ ricerca sequenziale](algorithms/SearchingAlgorithms/deterministicSearch.py)
+    * `B` [Jump Search](algorithms/SearchingAlgorithms/jumpSearch.py)
+    * `B` [Interpolation Search](algorithms/SearchingAlgorithms/interpolationSearch.py)
+    * `B` [Random Search](algorithms/SearchingAlgorithms/randomSearch.py)
+    * `B` [Scramble Search](algorithms/SearchingAlgorithms/scambleSearch.py)
     
 ### Algoritmi per paradigma
 
 * **Forza Bruta**
-    * `A` [Linear Search](Algorithms/SearchingAlgorithms/deterministicSearch.py)
+    * `A` [Linear Search](algorithms/SearchingAlgorithms/deterministicSearch.py)
 * **Algoritmi Golosi (Greedy Algorithms)**
 * **Dividi et Impera**
-    * `A` [Merge Sort](Algorithms/SortingAlgorithms/mergeSort.py)
-    * `A` [Quick Sort](Algorithms/SortingAlgorithms/quickSort.py)
-    * `A` [Max SubArray](Algorithms/DividiEtImpera/max-subarray-recursive.py)
-    * `A` [Moltiplicazione Matrici](Algorithms/DividiEtImpera/squareMatrixMultiply.py)
+    * `A` [Merge Sort](algorithms/SortingAlgorithms/mergeSort.py)
+    * `A` [Quick Sort](algorithms/SortingAlgorithms/quickSort.py)
+    * `A` [Max SubArray](algorithms/DividiEtImpera/max-subarray-recursive.py)
+    * `A` [Moltiplicazione Matrici](algorithms/DividiEtImpera/squareMatrixMultiply.py)
 * **Programmazione Dinamica**
-    * `B` [Fibonacci](Algorithms/DynamicProgramming/fibonacciDyn.py)
-    * `A` [Problema dello ziano 0/1](Algorithms/DynamicProgramming/01_knapsackProblem.py)
-    * `A` [Maxsub Array(Kandane algorithm)](Algorithms/DynamicProgramming/max-subarray-iterative.py)
+    * `B` [Fibonacci (versione programmazione dinamica)](algorithms/DynamicProgramming/fibonacciDyn.py)
+    * `A` [Problema dello ziano 0/1](algorithms/DynamicProgramming/01_knapsackProblem.py)
+    * `A` [Maxsub Array(Kandane algorithm)](algorithms/DynamicProgramming/max-subarray-iterative.py)
 * **Backtraking**
     
 ## Nozioni Basilari
@@ -175,6 +175,8 @@ Si prega di leggere CONTRIBUTING.md per i dettagli sul codice di condotta e il p
 ### Todo
 
 - [ ] Da migliorare la sezione delle notazioni basilari
+- [ ] aggingere readme stastistiche d'ordine
+- [ ] aggiunge i nuovi algoritmi alla lista iniziale
 
 #### Algoritmi 
 
