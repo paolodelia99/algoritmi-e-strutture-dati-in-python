@@ -307,7 +307,7 @@ da 0 a *k*, per qualche intero *k*.
 
 L'algoritmo utilizza un'array di appoggio, di dimensione pari all'intervallo dei valori, dove va a memorizzare tutte le occorenze di ciscuna valore presente 
 nell'array da ordinare.Successivamente eseguendo una scansione di C si modifica il valore dei
-suoi elementi, assegnando ad ogni ci il numero di elementi di A minori o uguali ad i.
+suoi elementi, assegnando ad ogni C[i] il numero di elementi di A minori o uguali ad i.
 Infine, con una terza ed ultima scansione dell’array C si costruisce un nuovo array B ordinato
 
 #### PseudoCodice
@@ -341,7 +341,7 @@ COUNTING-SORT(A,B,k)
 ### Radix sort
 
 Radix sort è un algoritmo di ordinamento che non utilizza i confronti. L'algoritmo 
-utilizza un procedimento controintuitivo per l'uomo, ma pià facilmente implementabile. Esegue gli ordinameni 
+utilizza un procedimento controintuitivo per l'uomo, ma pià facilmente implementabile. Esegue gli ordinamenti 
 per posizione della cifra ma partedno della cifra meno significativa.
 
 
@@ -365,9 +365,9 @@ nell'intervallo [0,1).
 
 #### Come funziona
 
-Bucket sort divide l'intervallo [0,1) in *n* sottointervalli della stessa dimensione, chiamati **bucket**(cesto). Ciascun 
+Bucket sort divide l'intervallo [0,1) in *n* sottointervalli della stessa dimensione, chiamati **bucket** (cesto). Ciascun 
 valore dell'array è inserito nel bucket a cui appartiene, i valori all'interno di ogni bucket vengono ordinati e l'algoritmo si conclude con 
-la concatenazione dei valori contenuti nei bucket. Dato che l'algoritmo assume che l'input sia uniformemente e indiependentemente
+la concatenazione dei valori contenuti nei bucket. Dato che l'algoritmo assume che l'input sia uniformemente e indipendentemente distribuito 
 nell'intervallo [0,1), non si aspetta che molti numeri vadano a finire nello stesso bucket.
 
 #### Pseudocodice
