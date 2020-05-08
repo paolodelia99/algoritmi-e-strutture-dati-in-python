@@ -183,3 +183,44 @@ class BinarySearchTree:
             y = x.parent
         
         return y
+
+
+        def transplant(self, u:TreeNode, v:TreeNode):
+            """Sostituisce un sottoalbero, come figlio di suo padre, con un altro sottoalbero
+
+            Arguments:
+                u {TreeNode} -- radice del sottoalbero da sostituire
+                v {TreeNode} -- radice del sottoalbero da inserire
+            """
+            if u.parent is None: # l'albero è vuoto
+                self.root = v
+            elif u == u.parent.left: # u è figlio sinistro 
+                u.parent.left = v
+            else: # u è figlio destro
+                u.parent.right = v
+
+            if v is not None: # aggiornamento di v.parent se v non è None
+                v.parent = u .parent
+
+
+        def delete(self, z:TreeNode):
+            """Rimozione del nodo dato come input dall'albero
+
+            Arguments:
+                z {TreeNode} -- nodo dell'albero da rimuovere
+            """
+            if z.left is None:
+                self.transplant(z, z.right)
+            elif z.right is None:
+                self.transplant(z, z.left)
+            else:
+                y = minimum(z.right)
+
+                if y.parent != z:
+                    self.transplant(y, t.right)
+                    y.right = z.right
+                    y.right.parent = y
+                
+                self.transplant(z,y)
+                y.left = z.left
+                y.left.parent = y
